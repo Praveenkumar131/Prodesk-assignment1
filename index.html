@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons -->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div class="toggle-container">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="toggle-switch"></label>
+    </div>
+
+    <div class="container" id="home">
+        <div class="left">
+            <h1>Welcome to the<br><span>Frontend Quiz!</span></h1>
+            <p>Pick a subject to get started.</p>
+        </div>
+        <div class="right">
+            <button class="topic" onclick="loadQuiz('html')"><i class="fa-solid fa-code"></i> HTML</button>
+            <button class="topic" onclick="loadQuiz('css')"><i class="fa-solid fa-paintbrush"></i> CSS</button>
+            <button class="topic" onclick="loadQuiz('js')"><i class="fa-brands fa-js"></i> Javascript</button>
+            <button class="topic" onclick="loadQuiz('accessibility')"><i class="fa-solid fa-universal-access"></i> Accessibility</button>
+        </div>
+    </div>
+    <div class="quiz" id="quiz"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
